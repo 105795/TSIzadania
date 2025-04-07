@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survery Form</h1>
+    <p id="description">This is a page for survey</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required><br>
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required><br>
+      <label for="number" id="number-label">Age</label>
+      <input type="number" id="number" placeholder="Age" min="0" max="110"><br><br>
+      <label for="dropdown">What is your education?</label>
+      <select id="dropdown" name="education">
+        <option value="primary">Primary</option>
+        <option value="secondary">Secondary</option>
+        <option value="vocational">Vocational</option>
+        <option value="Higher">Higher</option>
+      </select><br><br>
+      <fieldset>
+        <legend>Do you like animals?</legend>
+        <label for="yes">Yes</label>
+        <input type="radio" id="yes" name="do-u-like" value="yes">
+        <label for="no">No</label>
+        <input type="radio" id="no" name="do-u-like" value="no">
+        <label for="maybe">Maybe</label>
+        <input type="radio" id="maybe" name="do-u-like" value="maybe">
+      </fieldset>
+      <fieldset>
+      <legend>Do you have any pet?</legend>
+      <label for="animal">Cat</label>
+      <input type="checkbox" id="animal" name="animal" value="cat">
+      <label for="animal">Dog</label>
+      <input type="checkbox" id="animal" name="animal" value="dog">
+      <label for="animal">Hamster</label>
+      <input type="checkbox" id="animal" name="animal" value="hamster">
+      <label for="animal">Goat</label>
+      <input type="checkbox" id="animal" name="animal" value="goat">
+      </fieldset>
+      <br><label for="yours">Have you any additional information for me?</label><br>
+      <textarea id="yours" name="additional-informations" rows="8" cols="50" placeholder="Here you can write something else"></textarea>
+      <br><button type="submit" id="submit">Submit</button>
+
+    </form>
+  </body>
+</html>
