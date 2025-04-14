@@ -1,0 +1,66 @@
+body {
+  background-color: rgb(69, 173, 69);
+  padding: 20px;
+  font-family: calibri;
+}
+.main-div {
+  background-color: rgba(255, 255, 255, 0.938);
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 75%;
+  height: 600px;
+  max-width: 600px;
+}
+a {
+  color: violet;
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: grey;
+}
+a:focus {
+  outline: 3px solid #ff9900; 
+  /*outline-size: 3px;
+  outline-color: #ff9900;
+  outline-style: solid;
+  outline-offset: 2px;*/
+}
+a:active {
+  color: blue;
+}
+h1 {
+  text-align: center;
+  padding: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.todo-list {
+  margin-top: 0px;
+}
+
+li {
+ list-style-type: none;
+}
+
+.sub-item {
+  margin-top: 10px;
+}
+
+article {
+  background-color: rgb(209, 209, 223);
+  border-radius: 20px;
+  height: 100px;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+input {
+  margin-top: 20px;
+  margin-left: 20px;
+}
