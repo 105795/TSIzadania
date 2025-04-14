@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Formularz aplikacyjny</h1>
+            <form id="job-application"> <!-- czy to usunac? -->
+                <label for="name">Imie i nazwisko:</label>
+                <input type="text" id="name" name="name" placeholder="Podaj swoje imie i nazwisko" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Podaj adres email" required>
+    
+                <label for="position">Stanowisko:</label>
+                <select id="position" name="position" required>
+                    <option value="">Wybierz aplikowane stanowisko</option>
+                    <option value="stazysta">Stażysta</option>
+                    <option value="ml-programista">Młodszy programista</option>
+                    <option value="st-programista">Starszy programista</option>
+                </select>
+    
+                
+                <fieldset class="radio-group">
+                  <legend>Forma etatu:</legend>
+                    <input type="radio" id="et1" name="availability" value="fullTime" checked="">
+                    <label for="et1">1/4 etatu</label>
+                    <input type="radio" id="et2" name="availability" value="partTime">
+                    <label for="et2">2/4 etatu</label>
+                    <input type="radio" id="et3" name="availability" value="fullTime" checked="">
+                    <label for="et3">3/4 etatu</label>
+                    <input type="radio" id="et4" name="availability" value="partTime">
+                    <label for="et4">4/4 etatu</label>
+                </fieldset>
+    
+                <label for="message">Dlaczego powinieneś dostać tę pracę?</label>
+                <textarea id="message" name="message" rows="10" placeholder="Udziel odpowiedzi na pytanie" required=""></textarea>
+    
+                <button type="submit">Wyślij aplikację</button>
+            </form>
+        </div>
+    
+    </body>
+</body>
+</html>
