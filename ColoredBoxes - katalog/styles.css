@@ -1,0 +1,35 @@
+h1 {
+  font-family: Arial;
+  text-align: center;
+}
+body {
+  background: #f4f4f4;
+}
+.color-box {
+  width: 80px;
+  min-width: 80px;
+  height: 80px;
+  border-radius: 10px;
+ /* display: inline-block; */
+}
+.color-grid {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+}
+.color1 {
+  background-color: #FF10AB;
+}
+.color2 {
+  background-color: rgb(120, 70, 80);
+}
+.color3 {
+  background-color: orange;
+}
+.color4 {
+  background-color: hsl(170, 100%, 90%);
+}
+.color5 {
+  background-color: purple;
+}
