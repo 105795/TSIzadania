@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+        <nav id="navbar">
+          <header>Programming Languages</header>
+          <a class="nav-link" href="#html">HTML</a>
+          <a class="nav-link" href="#css">CSS</a>
+          <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+          <a class="nav-link" href="#python">Python</a>
+          <a class="nav-link" href="#c++">C++</a>
+        </nav>
+    <main id="main-doc">
+        
+      <section class="main-section" id="html">
+        <header>HTML</header>
+        <p>HTML (ang. HyperText Markup Language, hipertekstowy język znaczników) – język znaczników stosowany do tworzenia dokumentów hipertekstowych.</p>
+        <p>HTML pozwala opisać strukturę informacji zawartych wewnątrz strony internetowej, nadając odpowiednie znaczenie semantyczne poszczególnym fragmentom tekstu – formując hiperłącza, akapity, nagłówki, listy – oraz osadza w tekście dokumentu obiekty plikowe, na przykład multimedia, lub elementy baz danych, na przykład interaktywne formularze danych.</p>
+        <h3>Przykład kodu w HTML:</h3>
+        <code>&lt;p&gt;W tych znacznikach możemy zamieszczac  tekst paragrafów&lt;/p&gt;</code>
+        <h3>Język HTML składa się z kilku kluczowych komponentów:</h3>
+          <ul>
+          <li>znaczników (i ich atrybutów),</li>
+          <li>typów danych,</li>
+          <li>referencji znakowych,</li>
+          <li>odwołań w postaci encji,</li>
+          <li>deklaracji typu dokumentu.</li>
+        </ul>
+      </section><hr>
+      <section class="main-section" id="css">
+        <header>CSS</header>
+        <p>Kaskadowe arkusze stylów (ang. Cascading Style Sheets, w skrócie CSS) – język służący do opisu formy prezentacji (wyświetlania) stron WWW. CSS został opracowany przez organizację W3C w 1996 r. jako potomek języka DSSSL przeznaczony do używania w połączeniu z SGML-em. Pierwszy szkic CSS zaproponował w 1994 r. Håkon Wium Lie.</p>
+        <p>Arkusz stylów CSS to lista dyrektyw (tzw. reguł) ustalających, w jaki sposób ma zostać wyświetlana przez przeglądarkę internetową zawartość wybranego elementu (lub elementów) (X)HTML lub XML. Można w ten sposób opisać wszystkie pojęcia odpowiedzialne za prezentację elementów dokumentów internetowych, takie jak rodzina czcionek, kolor tekstu, marginesy, odstęp międzywierszowy lub nawet pozycja danego elementu względem innych elementów bądź okna przeglądarki. Wykorzystanie arkuszy stylów daje znacznie większe możliwości pozycjonowania elementów na stronie, niż oferuje sam (X)HTML.</p>
+        <h3>Przykład kodu w CSS:</h3>
+        <pre><code>.main-section > header {
+  font-weight: bold;
+  font-size: 40px;
+}</code></pre>
+      </section><hr>
+      <section class="main-section" id="JavaScript_and_Java">
+        <header>JavaScript and Java</header>
+        <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+        <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+        <code></code>
+      </section><hr>
+      <section class="main-section" id="python">
+        <header>Python</header>
+        <p>Python – język programowania wysokiego poziomu ogólnego przeznaczenia. Posiada rozbudowany pakiet bibliotek standardowych, którego ideą przewodnią jest czytelność i klarowność kodu źródłowego. Jego składnia cechuje się przejrzystością i zwięzłością.</p>
+        <p>Python wspiera różne paradygmaty programowania: obiektowy, imperatywny oraz w mniejszym stopniu funkcyjny. Posiada w pełni dynamiczny system typów i automatyczne zarządzanie pamięcią, będąc w tym podobnym do języków Perl, Ruby, Scheme czy Tcl. Podobnie jak inne języki dynamiczne jest często używany jako język skryptowy. Interpretery Pythona są dostępne na wiele systemów operacyjnych.</p>
+        <p>Python rozwijany jest jako projekt Open Source zarządzany przez Python Software Foundation, która jest organizacją non-profit. Standardową implementacją języka jest CPython (napisany w C), ale istnieją też inne, np. Jython (napisany w Javie), CLPython napisany w Common Lisp, IronPython (na platformę .NET) i PyPy (napisany w Pythonie, zob. bootstrap).</p>
+        <code></code>
+      </section><hr>
+      <section class="main-section" id="c++">
+        <header>C++</header>
+        <p>C++ – język programowania ogólnego przeznaczenia, zaprojektowany przez Bjarne'a Stroustrupa jako rozszerzenie języka C o obiektowe mechanizmy abstrakcji danych i silną statyczną kontrolę typów. Zachowanie zgodności z językiem C na poziomie kodu źródłowego pozostaje jednym z podstawowych celów projektowych kolejnych standardów języka.</p>
+        <p>Umożliwia abstrakcję danych oraz stosowanie kilku paradygmatów programowania: proceduralnego, obiektowego i generycznego, a także funkcyjnego i modularnego. Charakteryzuje się wysoką wydajnością kodu wynikowego, bezpośrednim dostępem do zasobów sprzętowych i funkcji systemowych, łatwością tworzenia i korzystania z bibliotek (napisanych w C++, C lub innych językach), niezależnością od konkretnej platformy sprzętowej lub systemowej (co gwarantuje wysoką przenośność kodów źródłowych) oraz niewielkim środowiskiem uruchomieniowym. Podstawowym obszarem jego zastosowań są aplikacje i systemy operacyjne.</p>
+
+        <h3>Fragment kodu napisanego w C++:</h3>
+        <pre><code>#include &ltiostream&gt
+using namespace std;
+
+const float pi = 3.14159;
+
+float poleKola (void) {
+	cout << "Podaj promien kola: ";
+	int promien;
+	cin >> promien;
+	return pi*(promien*promien);
+};
+float obwodKola (float promien) {
+	return 2*pi*promien;
+}
+
+int main() {
+	
+	
+	
+
+	cout << "Co chcesz obliczyc?\n[1] Pole kola\n[2] Obwod kola" << endl;
+	int coZrobic;
+	cin >> coZrobic;
+	if (coZrobic==1) {
+		cout << "Licze pole kola:" << endl;
+		cout << poleKola();
+	} else if (coZrobic==2) {
+		cout << "Liczbe obwod kola:" << endl;
+		cout << "Podaj promien kola: ";
+		int promien;
+		cin >> promien;
+		cout << "Obwod wynosi: "<< obwodKola(promien);
+	} else { cout << "Nie ma takiego dzialania\a" << endl;
+	}
+	
+	
+	
+	return 0;
+}
+</code></pre>
+      </section>
+    </main>
+    
+  </body>
+  <footer>
+      <p>@UID 105795</p>
+    </footer>
+</html>
