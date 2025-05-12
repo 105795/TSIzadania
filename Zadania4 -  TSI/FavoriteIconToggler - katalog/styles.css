@@ -1,0 +1,24 @@
+.item-list {
+  list-style: none;
+  font-family: Calibri, sans-serif;
+  padding: 0;
+}
+
+.favorite-icon {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: 15px;
+  color: black;
+  transition: color 0.3s;
+}
+
+.favorite-icon.filled {
+  color: red;
+}
+
+.filled {
+  background-color: rgb(198, 205, 198);
+  border-radius: 10px;
+}
