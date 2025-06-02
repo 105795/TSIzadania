@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PFM Bilety</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+            <form method="post" action='https://losowastronapfmbilety.pl'>
+            <fieldset>
+            <legend>Dane kontaktowe:</legend>
+                <label for="imie">Imię:</label>
+                <input id="imie" type="text" name="first-name" required>
+                <label for="nazwisko">Nazwisko:</label>
+                <input id="nazwisko" type="text" name="last-name" required>
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="uczestnik@gmail.com", name="email" required>
+                <label for="telefon">Nr telefonu:</label>
+                <input id="telefon" type="number" placeholder="+48111222333" name="tel-number" required>
+            </fieldset>
+            <fieldset>
+                <legend>Wybór biletu:</legend>
+                <label>Bilet na jakie dni chcesz zakupić?</label>
+                <div class="chckbx_radio">
+                <input id="dzien1" type="checkbox" name="festdays">
+                <label for="dzien1">27.06.2025 (Piątek)</label>
+                </div>
+                <div class="chckbx_radio">
+                <input id="dzien2" type="checkbox" name="festdays">
+                <label for="dzien2">28.06.2025 (Sobota)</label>
+                </div>
+                <div class="chckbx_radio">
+                <input id="dzien3" type="checkbox" name="festdays">
+                <label for="dzien2">29.06.2025 (Niedziela)</label>
+                </div>
+                <br>
+                <label>Proszę podać rodzaj biletu:</label>
+                <div class="chckbx_radio">
+                <input id="b-zwykly" type="radio" name="typ-biletu" required>
+                <label for="b-zwykly">Normalny</label>
+                </div>
+                <div class="chckbx_radio">
+                <input id="b-vip" type="radio" name="typ-biletu" required>
+                <label for="b-vip">VIP</label>
+                </div>
+                <br>
+                <label>Ile biletów chcesz zakupić?</label>
+                <select id="ile-biletow" name="ile-biletow">
+                    <option value="">Wybierz ilosc</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Dane do płatności</legend>
+                <label for="nr-karty">Numer karty platniczej:</label>
+                <input id="nr-karty" type="number" name="nr-karty">
+                <label for="d-waznosci">Data ważności:</label>
+                <input id="d-waznosci" type="text" name="d-waznosci">
+                <label for="kod-cvv">CVV:</label>
+                <input id="kod-cvv" type="text" name="kod-cvv">
+            </fieldset>
+             <label for="regulamin">
+             <input id="regulamin" type="checkbox" required name="regulamin" /> Potwierdzam <a href="https://www.freecodecamp.org/news/terms-of-service/">regulamin i politykę</a> wydarzenia
+             </label>
+             <input type="submit" value="Potwierdzam i płacę" />
+            </form>
+        </div>
+    </body>
+</html>

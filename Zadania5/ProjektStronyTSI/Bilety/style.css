@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #db9106;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.box {
+    margin-top: 100px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #ffae00;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+input[type="radio"] {
+    margin-left: 10px;
+}
+
+select {
+    background-color: #fff;
+}
+@media (max-width: 768px) {
+    .box {
+        padding: 20px;
+        width: 90%;
+    }
+
+    input[type="submit"] {
+        font-size: 1rem;
+    }
+}
+.chckbx_radio {
+    display: block;
+}
